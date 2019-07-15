@@ -26,7 +26,7 @@ In legacy architecture, controller is calling `ObjectModel` directly, without pr
 
 {{< figure src="../img/legacy_architecture.png" title="Legacy architecture" >}}
 
-Fortunately, by implementing CQRS it allows PrestaShop to quickly build new API, but still use legacy `ObjectModel` by implementing `Adapter` handlers. This approach enables us to drop `ObjectModel` and replace it with something else later without breaking new API (Commands & Queries). See new architecture's schema below:
+Fortunately, implementing CQRS allows PrestaShop to quickly build the new API, but still preserve legacy `ObjectModel` by using `Adapter` handlers. This approach enables us to drop `ObjectModel` and replace it with something else later without breaking new API (Commands & Queries). See new architecture's schema below:
 
 {{< figure src="../img/new_architecture.png" title="New architecture using CQRS" >}}
 
